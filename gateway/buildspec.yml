@@ -2,7 +2,7 @@ version: 0.2
 ##
 env:
   variables:
-    _PROJECT_NAME: "user01-order-test"
+    _PROJECT_NAME: "sharecar_gateway"
 #
 phases:
   install:
