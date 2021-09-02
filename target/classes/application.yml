@@ -43,19 +43,19 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: Order
+        - id: sharecar-order
           uri: http://sharecar-order:8080
           predicates:
             - Path=/orders/** 
-        - id: Payment
+        - id: sharecar-payment
           uri: http://sharecar-payment:8080
           predicates:
             - Path=/paymentHistories/** 
-        - id: Reservation
+        - id: sharecar-reservation
           uri: http://sharecar-reservation:8080
           predicates:
             - Path=/reservations/** 
-        - id: MyPage
+        - id: sharecar-mypage
           uri: http://sharecar-mypage:8080
           predicates:
             - Path= /myPages/**
